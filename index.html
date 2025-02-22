@@ -13,12 +13,13 @@
         <h2 class="header">YAY! It’s BOGO</h2>
         
         <!-- 1 Unit Option -->
-        <div class="box" id="unit1Box" onclick="selectBox('unit1Box', 'unit1Options')">
+        <div class="box" id = 'unit1box' >
 
-            <div class = 'unitComb'>
-                <div>
-                    <input type="radio" name="unit" id="unit1" onclick="updateTotal(10)">
-                    <label for="unit1">1 Unit <span class="discount">10% Off</span></label>
+            <div class = 'unitComb' onclick="selectBox('unit1box', 'unit1Options', 10)">
+                <div >
+                    <input type="radio" name="unit" id="unit1" onclick="event.stopPropagation()">
+                    <label for="unit1">1 Unit <span class="discount">10% Off</span></label><br/>
+                    <p class="standPr"><i>Standard Price</i></p>
                 </div>   
                 <div>
                     <span class="price">$10.00 USD</span><br/>
@@ -42,14 +43,13 @@
             </div>
         </div>
         
-        <!-- 2 Unit Option (Most Popular) -->
-        <div class="box highlight" id="unit2Box" onclick="selectBox('unit2Box', 'unit2Options')">
+        <!-- 2 Unit option with most popular -->
+        <div class="box highlight" id="unit2Box" >
 
-            <div class = "unitComb">
-
-                <div>
-                 <input type="radio" name="unit" id="unit2" checked onclick="updateTotal(18)">
-                 <label for="unit1">2 Unit <span class="discount">20% Off</span></label>
+            <div class = "unitComb" onclick="selectBox('unit2Box', 'unit2Options',18)">
+                <div >
+                 <input type="radio" name="unit" id="unit2" onclick="event.stopPropagation()" >
+                 <label for="unit2">2 Unit <span class="discount">20% Off</span></label>
                 </div>
                 <div>
                     <span class="price">$18.00 USD</span><br/>
@@ -88,11 +88,11 @@
         </div>
         
         <!-- 3 Unit Option -->
-        <div class="box" id="unit3Box" onclick="selectBox('unit3Box', 'unit3Options')">
+        <div class="box" id="unit3Box" >
 
-            <div class="unitComb">
-                <div>
-                    <input type="radio" name="unit" id="unit3" onclick="updateTotal(24)">
+            <div class="unitComb" onclick="selectBox('unit3Box', 'unit3Options',24)">
+                <div >
+                    <input type="radio" name="unit" id="unit3" onclick="event.stopPropagation()">
                     <label for="unit3">3 Units <span class="discount">30% Off</span></label>
                 </div>
                
@@ -146,7 +146,6 @@
             </div>
         </div>
         
-        <!-- Total and Button -->
          <div class="unitComb">
             <p class="freeDev">Free Delivery</p>
             <p id="total" class="price">Total: $18.00 USD</p>

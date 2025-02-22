@@ -109,7 +109,7 @@ body {
     box-shadow: #d81b60 5px 2px 5px;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .container {
         padding: 15px;
@@ -150,4 +150,8 @@ body {
     .button {
         padding: 8px;
     }
+}
+
+.standPr{
+    margin-top: 5px;
 }

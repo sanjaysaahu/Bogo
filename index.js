@@ -1,15 +1,14 @@
-function updateTotal(amount) {
-    document.getElementById('total').innerText = 'Total: $' + amount.toFixed(2) + ' USD';
-}
 
-function selectBox(boxId, optionsId) {
+
+function selectBox(boxId, optionsId, amount) {
+    document.getElementById('total').innerText = 'Total: $' + amount.toFixed(2) + ' USD';
+    toggleDropdown(optionsId);
     const allBoxes = document.querySelectorAll('.box');
     allBoxes.forEach(box => box.classList.remove('highlight'));
     
     const selectedBox = document.getElementById(boxId);
     selectedBox.classList.add('highlight');
     
-    toggleDropdown(optionsId);
 }
 
 function toggleDropdown(id) {
