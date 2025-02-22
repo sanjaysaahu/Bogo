@@ -68,6 +68,22 @@ body {
     margin-left: 10px;
 }
 
+.features{
+    display: flex;
+    gap: 30px;
+    margin-left: 40px;
+    padding-bottom: 5px;
+}
+
+.features1{
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
+
+
 .button {
     display: block;
     width: 100%;
