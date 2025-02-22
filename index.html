@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="index.css">  
+    <script src="index.js"></script> 
+    
+</head>
+<body>
+    <div class="container">
+        <h2 class="header">YAY! It’s BOGO</h2>
+        
+        <!-- 1 Unit Option -->
+        <div class="box" id="unit1Box" onclick="selectBox('unit1Box', 'unit1Options')">
+
+            <div class = 'unitComb'>
+                <div>
+                    <input type="radio" name="unit" id="unit1" onclick="updateTotal(10)">
+                    <label for="unit1">1 Unit <span class="discount">10% Off</span></label>
+                </div>   
+                <div>
+                    <span class="price">$10.00 USD</span><br/>
+                    <span class="strike">$24.00 USD</span>
+                </div>
+            </div>
+
+            <div id="unit1Options" class="hidden">
+                Size:
+                <select class="dropdown">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                Colour:
+                <select class="dropdown">
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- 2 Unit Option (Most Popular) -->
+        <div class="box highlight" id="unit2Box" onclick="selectBox('unit2Box', 'unit2Options')">
+
+            <div class = "unitComb">
+
+                <div>
+                 <input type="radio" name="unit" id="unit2" checked onclick="updateTotal(18)">
+                 <label for="unit1">2 Unit <span class="discount">20% Off</span></label>
+                </div>
+                <div>
+                    <span class="price">$18.00 USD</span><br/>
+                    <span class="strike">$24.00 USD</span>
+                </div>
+            </div>
+
+          
+            <div id="unit2Options">
+                #1 Size:
+                <select class="dropdown">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                Colour:
+                <select class="dropdown">
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                </select>
+                <br>
+                #2 Size:
+                <select class="dropdown">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                Colour:
+                <select class="dropdown">
+                    <option>Colour</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- 3 Unit Option -->
+        <div class="box" id="unit3Box" onclick="selectBox('unit3Box', 'unit3Options')">
+
+            <div class="unitComb">
+                <div>
+                    <input type="radio" name="unit" id="unit3" onclick="updateTotal(24)">
+                    <label for="unit3">3 Units <span class="discount">30% Off</span></label>
+                </div>
+               
+                <div>
+                    <span class="price">$24.00 USD</span><br/>
+                    <span class="strike">$24.00 USD</span>
+                </div>
+
+            </div>
+
+            
+            <div id="unit3Options" class="hidden">
+                #1 Size:
+                <select class="dropdown">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                Colour:
+                <select class="dropdown">
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                </select>
+                <br>
+                #2 Size:
+                <select class="dropdown">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                Colour:
+                <select class="dropdown">
+                    <option>Blue</option>
+                    <option>Green</option>
+                    <option>Yellow</option>
+                </select>
+                <br>
+                #3 Size:
+                <select class="dropdown">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                Colour:
+                <select class="dropdown">
+                    <option>Purple</option>
+                    <option>Orange</option>
+                    <option>Pink</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Total and Button -->
+         <div class="unitComb">
+            <p class="freeDev">Free Delivery</p>
+            <p id="total" class="price">Total: $18.00 USD</p>
+         </div>
+       
+        <button class="button">+ Add to Cart</button>
+    </div>
+</body>
+</html>
